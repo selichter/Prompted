@@ -8,19 +8,34 @@
 import SwiftUI
 
 struct PromptsView: View {
-    @ObservedObject var vm = PromptsViewModel()
-    internal var didAppear: ((Self) -> Void)?
+    @ObservedObject var store: Store<AppState, AppAction>
     
     var body: some View {
         ZStack {
-            vm.displayedPrompt.backgroundColor.ignoresSafeArea()
-
+            store.value.displayPrompt.backgroundColor.ignoresSafeArea()
+            
             VStack(alignment: .leading) {
+                HStack {
+                    Spacer()
+                    Image(systemName: "ellipsis.circle")
+                        .foregroundColor(.white)
+                }
                 Spacer()
-                Text("Today's Prompt")
-                    .foregroundColor(.white)
-                    .font(.body)
-                Text(vm.displayedPrompt.text)
+                HStack {
+                    
+                    Text(store.value.displayPrompt.category.rawValue)
+                        .accessibilityIdentifier("category")
+                    VStack {
+                        store.value.displayPrompt.isFavorite ? Image(systemName: "heart.fill") : Image(systemName: "heart")
+                    }.onTapGesture {
+                        store.send(.prompt(.toggleFavorite))
+                    }
+                        
+                }
+                .foregroundColor(.white)
+                .font(.body)
+                
+                Text(store.value.displayPrompt.text)
                     .foregroundColor(.white)
                     .bold()
                     .font(.title)
@@ -30,22 +45,36 @@ struct PromptsView: View {
                     .accessibilityIdentifier("prompt")
                 
                 HStack {
+                    VStack(alignment: .leading) {
+                        Text("Num of Times Used")
+                            
+                        Text("\(store.value.displayPrompt.timesUsed)")
+                            .accessibilityIdentifier("count")
+                    }
+                    Spacer()
+                    VStack(alignment: .leading) {
+                        Text("Last Used")
+                        Text(store.value.displayPrompt.lastUsed?.description ?? "-")
+                            .accessibilityIdentifier("lastUsed")
+                    }
+                }
+                
+                
+                HStack {
                     Spacer()
                     Image(systemName: "xmark.circle")
                         .onTapGesture {
-                            vm.advancePrompt()
+                            store.send(.prompt(.advancePrompt))
                         }
                     Spacer()
-                    
-                    if (vm.displayedPrompt.lastUsed == nil) {
+                    if let _ =  store.value.displayPrompt.lastUsed {
+                        Image(systemName: "checkmark.circle.fill")
+                    } else {
                         Image(systemName: "checkmark.circle")
                             .onTapGesture {
-                                vm.setDateUsed(date: Date())
+                                store.send(.prompt(.markAsUsed))
                             }
-                    } else {
-                        Image(systemName: "checkmark.circle.fill")
                     }
-
                     Spacer()
                 }
                 .font(.title)
@@ -53,18 +82,14 @@ struct PromptsView: View {
             .foregroundColor(.white)
             .padding(.bottom, 100)
             .padding(Spacing.defaultViewMargin)
+            
         }
-        .onAppear {
-            vm.loadPrompts()
-            self.didAppear?(self)
-        }
-
 
     }
 }
 
 struct PromptsView_Previews: PreviewProvider {
     static var previews: some View {
-        PromptsView()
+        PromptsView(store: Store(value: AppState(), reducer: appReducer))
     }
 }
