@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF0442DC275E9B0E003CE964 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442DB275E9B0E003CE964 /* Store.swift */; };
+		DF0442DE275E9B2A003CE964 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442DD275E9B2A003CE964 /* AppState.swift */; };
+		DF0442E0275EB1C4003CE964 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442DF275EB1C4003CE964 /* AppAction.swift */; };
+		DF0442E2275EB219003CE964 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442E1275EB219003CE964 /* AppReducer.swift */; };
+		DF0442E3275F1EE8003CE964 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442DB275E9B0E003CE964 /* Store.swift */; };
+		DF0442E4275F1EEC003CE964 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442DD275E9B2A003CE964 /* AppState.swift */; };
+		DF0442E5275F1EF0003CE964 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442DF275EB1C4003CE964 /* AppAction.swift */; };
+		DF0442E6275F1EF3003CE964 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442E1275EB219003CE964 /* AppReducer.swift */; };
+		DF0442E827601194003CE964 /* PromptReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442E727601194003CE964 /* PromptReducerTests.swift */; };
+		DF0442EE276042DD003CE964 /* PromptReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442ED276042DD003CE964 /* PromptReducer.swift */; };
+		DF0442EF2760431B003CE964 /* PromptReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442ED276042DD003CE964 /* PromptReducer.swift */; };
+		DF0442F12760433C003CE964 /* PromptsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442F02760433C003CE964 /* PromptsAction.swift */; };
+		DF0442F22760433C003CE964 /* PromptsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442F02760433C003CE964 /* PromptsAction.swift */; };
 		DF993DFF2751C0CD00131CE8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993DFE2751C0CD00131CE8 /* Tests_iOS.swift */; };
 		DF993E012751C0CD00131CE8 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E002751C0CD00131CE8 /* Tests_iOSLaunchTests.swift */; };
 		DF993E0B2751C0CD00131CE8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E0A2751C0CD00131CE8 /* Tests_macOS.swift */; };
 		DF993E0D2751C0CD00131CE8 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E0C2751C0CD00131CE8 /* Tests_macOSLaunchTests.swift */; };
 		DF993E0E2751C0CD00131CE8 /* PromptedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993DE62751C0C900131CE8 /* PromptedApp.swift */; };
 		DF993E0F2751C0CD00131CE8 /* PromptedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993DE62751C0C900131CE8 /* PromptedApp.swift */; };
-		DF993E102751C0CD00131CE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993DE72751C0C900131CE8 /* ContentView.swift */; };
-		DF993E112751C0CD00131CE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993DE72751C0C900131CE8 /* ContentView.swift */; };
 		DF993E122751C0CD00131CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF993DE82751C0CD00131CE8 /* Assets.xcassets */; };
 		DF993E132751C0CD00131CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF993DE82751C0CD00131CE8 /* Assets.xcassets */; };
 		DF993E292751C1AF00131CE8 /* PromptedUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E282751C1AF00131CE8 /* PromptedUnitTests.swift */; };
 		DF993E312751C24D00131CE8 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = DF993E302751C24D00131CE8 /* ViewInspector */; };
-		DF993E332751C45700131CE8 /* PromptsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E322751C45700131CE8 /* PromptsViewModelTests.swift */; };
-		DF993E352751C48D00131CE8 /* PromptsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E342751C48D00131CE8 /* PromptsViewModel.swift */; };
-		DF993E362751C48D00131CE8 /* PromptsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E342751C48D00131CE8 /* PromptsViewModel.swift */; };
 		DF993E382751C4CC00131CE8 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E372751C4CC00131CE8 /* Prompt.swift */; };
 		DF993E392751C4CC00131CE8 /* Prompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E372751C4CC00131CE8 /* Prompt.swift */; };
 		DFDCE2072751C6A5009EFA83 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCE2062751C6A5009EFA83 /* Category.swift */; };
@@ -32,7 +40,6 @@
 		DFDCE2122751C73B009EFA83 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCE2102751C73B009EFA83 /* Color+Extension.swift */; };
 		DFDCE2142751C756009EFA83 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCE2132751C756009EFA83 /* Spacing.swift */; };
 		DFDCE2152751C756009EFA83 /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCE2132751C756009EFA83 /* Spacing.swift */; };
-		DFDCE2222751D9C8009EFA83 /* PromptsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDCE2212751D9C8009EFA83 /* PromptsViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +67,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF0442DB275E9B0E003CE964 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		DF0442DD275E9B2A003CE964 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		DF0442DF275EB1C4003CE964 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		DF0442E1275EB219003CE964 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		DF0442E727601194003CE964 /* PromptReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptReducerTests.swift; sourceTree = "<group>"; };
+		DF0442ED276042DD003CE964 /* PromptReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptReducer.swift; sourceTree = "<group>"; };
+		DF0442F02760433C003CE964 /* PromptsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsAction.swift; sourceTree = "<group>"; };
 		DF993DE62751C0C900131CE8 /* PromptedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptedApp.swift; sourceTree = "<group>"; };
-		DF993DE72751C0C900131CE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF993DE82751C0CD00131CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF993DED2751C0CD00131CE8 /* Prompted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prompted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF993DF32751C0CD00131CE8 /* Prompted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prompted.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +87,6 @@
 		DF993E0C2751C0CD00131CE8 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		DF993E262751C1AF00131CE8 /* PromptedUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromptedUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF993E282751C1AF00131CE8 /* PromptedUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptedUnitTests.swift; sourceTree = "<group>"; };
-		DF993E322751C45700131CE8 /* PromptsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsViewModelTests.swift; sourceTree = "<group>"; };
-		DF993E342751C48D00131CE8 /* PromptsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsViewModel.swift; sourceTree = "<group>"; };
 		DF993E372751C4CC00131CE8 /* Prompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompt.swift; sourceTree = "<group>"; };
 		DFDCE2062751C6A5009EFA83 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		DFDCE2092751C6C8009EFA83 /* PromptsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsView.swift; sourceTree = "<group>"; };
@@ -83,7 +94,6 @@
 		DFDCE2132751C756009EFA83 /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		DFDCE21F2751C991009EFA83 /* Prompted--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Prompted--iOS--Info.plist"; sourceTree = "<group>"; };
 		DFDCE2202751CA2E009EFA83 /* Prompted--macOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Prompted--macOS--Info.plist"; sourceTree = "<group>"; };
-		DFDCE2212751D9C8009EFA83 /* PromptsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF0442DA275E9AFE003CE964 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				DF0442EC276042BE003CE964 /* Reducers */,
+				DF0442EB276042A8003CE964 /* Actions */,
+				DF0442DB275E9B0E003CE964 /* Store.swift */,
+				DF0442DD275E9B2A003CE964 /* AppState.swift */,
+				DF0442DF275EB1C4003CE964 /* AppAction.swift */,
+				DF0442E1275EB219003CE964 /* AppReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		DF0442EB276042A8003CE964 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				DF0442F02760433C003CE964 /* PromptsAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		DF0442EC276042BE003CE964 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				DF0442ED276042DD003CE964 /* PromptReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
 		DF993DE02751C0C900131CE8 = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +182,10 @@
 		DF993DE52751C0C900131CE8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DF0442DA275E9AFE003CE964 /* Store */,
 				DFDCE20C2751C6F8009EFA83 /* Styles */,
 				DF993DE62751C0C900131CE8 /* PromptedApp.swift */,
-				DF993DE72751C0C900131CE8 /* ContentView.swift */,
 				DF993DE82751C0CD00131CE8 /* Assets.xcassets */,
-				DF993E342751C48D00131CE8 /* PromptsViewModel.swift */,
 				DF993E372751C4CC00131CE8 /* Prompt.swift */,
 				DFDCE2062751C6A5009EFA83 /* Category.swift */,
 				DFDCE2092751C6C8009EFA83 /* PromptsView.swift */,
@@ -197,8 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				DF993E282751C1AF00131CE8 /* PromptedUnitTests.swift */,
-				DF993E322751C45700131CE8 /* PromptsViewModelTests.swift */,
-				DFDCE2212751D9C8009EFA83 /* PromptsViewTests.swift */,
+				DF0442E727601194003CE964 /* PromptReducerTests.swift */,
 			);
 			path = PromptedUnitTests;
 			sourceTree = "<group>";
@@ -407,12 +444,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDCE20A2751C6C8009EFA83 /* PromptsView.swift in Sources */,
+				DF0442DE275E9B2A003CE964 /* AppState.swift in Sources */,
 				DFDCE2142751C756009EFA83 /* Spacing.swift in Sources */,
-				DF993E102751C0CD00131CE8 /* ContentView.swift in Sources */,
+				DF0442E0275EB1C4003CE964 /* AppAction.swift in Sources */,
+				DF0442F12760433C003CE964 /* PromptsAction.swift in Sources */,
+				DF0442DC275E9B0E003CE964 /* Store.swift in Sources */,
+				DF0442E2275EB219003CE964 /* AppReducer.swift in Sources */,
 				DFDCE2072751C6A5009EFA83 /* Category.swift in Sources */,
 				DF993E382751C4CC00131CE8 /* Prompt.swift in Sources */,
 				DF993E0E2751C0CD00131CE8 /* PromptedApp.swift in Sources */,
-				DF993E352751C48D00131CE8 /* PromptsViewModel.swift in Sources */,
+				DF0442EE276042DD003CE964 /* PromptReducer.swift in Sources */,
 				DFDCE2112751C73B009EFA83 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,12 +463,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDCE20B2751C6C8009EFA83 /* PromptsView.swift in Sources */,
+				DF0442E4275F1EEC003CE964 /* AppState.swift in Sources */,
 				DFDCE2152751C756009EFA83 /* Spacing.swift in Sources */,
-				DF993E112751C0CD00131CE8 /* ContentView.swift in Sources */,
+				DF0442E5275F1EF0003CE964 /* AppAction.swift in Sources */,
+				DF0442F22760433C003CE964 /* PromptsAction.swift in Sources */,
+				DF0442E3275F1EE8003CE964 /* Store.swift in Sources */,
+				DF0442E6275F1EF3003CE964 /* AppReducer.swift in Sources */,
 				DFDCE2082751C6A5009EFA83 /* Category.swift in Sources */,
 				DF993E392751C4CC00131CE8 /* Prompt.swift in Sources */,
 				DF993E0F2751C0CD00131CE8 /* PromptedApp.swift in Sources */,
-				DF993E362751C48D00131CE8 /* PromptsViewModel.swift in Sources */,
+				DF0442EF2760431B003CE964 /* PromptReducer.swift in Sources */,
 				DFDCE2122751C73B009EFA83 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,8 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF993E332751C45700131CE8 /* PromptsViewModelTests.swift in Sources */,
-				DFDCE2222751D9C8009EFA83 /* PromptsViewTests.swift in Sources */,
+				DF0442E827601194003CE964 /* PromptReducerTests.swift in Sources */,
 				DF993E292751C1AF00131CE8 /* PromptedUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,10 +7,10 @@
 
 import Foundation
 
-enum Category {
-    case health,
-         relationships,
-         money,
-         selfDiscovery,
-         managingEmotions
+enum Category: String {
+    case health = "Health",
+         relationships = "Relationships",
+         money = "Money",
+         selfDiscovery = "Self-Discovery",
+         managingEmotions = "Managing Emotions"
 }

@@ -15,5 +15,7 @@ struct Prompt: Identifiable {
     var lastUsed: Date?
     var backgroundColor: Color = Color.goldMetallic
     var textColor: Color = Color.white
+    var timesUsed: Int = 0
+    var isFavorite: Bool = false
 }
 
