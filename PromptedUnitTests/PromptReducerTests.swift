@@ -55,7 +55,5 @@ class PromptReducerTests: XCTestCase {
         XCTAssertFalse(state.displayPrompt.isFavorite)
         XCTAssertEqual(state.displayPrompt.id, 20)
     }
-    
-    
 
 }

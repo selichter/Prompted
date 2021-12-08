@@ -20,5 +20,7 @@ func promptReducer(value: inout AppState, action: AppAction) -> Void {
         value.displayPrompt.timesUsed += 1
     case .prompt(.toggleFavorite):
         value.displayPrompt.isFavorite.toggle()
+    default:
+        break
     }
 }

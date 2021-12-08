@@ -12,17 +12,12 @@ struct PromptsView: View {
     
     var body: some View {
         ZStack {
-            store.value.displayPrompt.backgroundColor.ignoresSafeArea()
+            Color.black.ignoresSafeArea()
             
             VStack(alignment: .leading) {
-                HStack {
-                    Spacer()
-                    Image(systemName: "ellipsis.circle")
-                        .foregroundColor(.white)
-                }
+
                 Spacer()
                 HStack {
-                    
                     Text(store.value.displayPrompt.category.rawValue)
                         .accessibilityIdentifier("category")
                     VStack {
@@ -61,11 +56,6 @@ struct PromptsView: View {
                 
                 
                 HStack {
-                    Spacer()
-                    Image(systemName: "xmark.circle")
-                        .onTapGesture {
-                            store.send(.prompt(.advancePrompt))
-                        }
                     Spacer()
                     if let _ =  store.value.displayPrompt.lastUsed {
                         Image(systemName: "checkmark.circle.fill")

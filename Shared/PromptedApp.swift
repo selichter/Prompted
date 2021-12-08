@@ -11,7 +11,7 @@ import SwiftUI
 struct PromptedApp: App {
     var body: some Scene {
         WindowGroup {
-            PromptsView(store: Store(value: AppState(), reducer: appReducer))
+            HomeView(store: Store(value: AppState(), reducer: appReducer))
         }
     }
 }
