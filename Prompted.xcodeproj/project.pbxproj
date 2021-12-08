@@ -20,6 +20,13 @@
 		DF0442EF2760431B003CE964 /* PromptReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442ED276042DD003CE964 /* PromptReducer.swift */; };
 		DF0442F12760433C003CE964 /* PromptsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442F02760433C003CE964 /* PromptsAction.swift */; };
 		DF0442F22760433C003CE964 /* PromptsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0442F02760433C003CE964 /* PromptsAction.swift */; };
+		DF122D942760513E00836971 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D932760513E00836971 /* HomeView.swift */; };
+		DF122D952760513E00836971 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D932760513E00836971 /* HomeView.swift */; };
+		DF122D97276061B800836971 /* HomeFeedReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D96276061B800836971 /* HomeFeedReducer.swift */; };
+		DF122D98276061B800836971 /* HomeFeedReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D96276061B800836971 /* HomeFeedReducer.swift */; };
+		DF122D9A276061CB00836971 /* HomeFeedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D99276061CB00836971 /* HomeFeedAction.swift */; };
+		DF122D9B276061CB00836971 /* HomeFeedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D99276061CB00836971 /* HomeFeedAction.swift */; };
+		DF122D9D276062A700836971 /* HomeFeedReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D9C276062A600836971 /* HomeFeedReducerTests.swift */; };
 		DF993DFF2751C0CD00131CE8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993DFE2751C0CD00131CE8 /* Tests_iOS.swift */; };
 		DF993E012751C0CD00131CE8 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E002751C0CD00131CE8 /* Tests_iOSLaunchTests.swift */; };
 		DF993E0B2751C0CD00131CE8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E0A2751C0CD00131CE8 /* Tests_macOS.swift */; };
@@ -73,6 +80,10 @@
 		DF0442E727601194003CE964 /* PromptReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptReducerTests.swift; sourceTree = "<group>"; };
 		DF0442ED276042DD003CE964 /* PromptReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptReducer.swift; sourceTree = "<group>"; };
 		DF0442F02760433C003CE964 /* PromptsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsAction.swift; sourceTree = "<group>"; };
+		DF122D932760513E00836971 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DF122D96276061B800836971 /* HomeFeedReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedReducer.swift; sourceTree = "<group>"; };
+		DF122D99276061CB00836971 /* HomeFeedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedAction.swift; sourceTree = "<group>"; };
+		DF122D9C276062A600836971 /* HomeFeedReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedReducerTests.swift; sourceTree = "<group>"; };
 		DF993DE62751C0C900131CE8 /* PromptedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptedApp.swift; sourceTree = "<group>"; };
 		DF993DE82751C0CD00131CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF993DED2751C0CD00131CE8 /* Prompted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prompted.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				DF0442F02760433C003CE964 /* PromptsAction.swift */,
+				DF122D99276061CB00836971 /* HomeFeedAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -159,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				DF0442ED276042DD003CE964 /* PromptReducer.swift */,
+				DF122D96276061B800836971 /* HomeFeedReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -187,6 +200,7 @@
 				DF993E372751C4CC00131CE8 /* Prompt.swift */,
 				DFDCE2062751C6A5009EFA83 /* Category.swift */,
 				DFDCE2092751C6C8009EFA83 /* PromptsView.swift */,
+				DF122D932760513E00836971 /* HomeView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -234,6 +248,7 @@
 			children = (
 				DF993E282751C1AF00131CE8 /* PromptedUnitTests.swift */,
 				DF0442E727601194003CE964 /* PromptReducerTests.swift */,
+				DF122D9C276062A600836971 /* HomeFeedReducerTests.swift */,
 			);
 			path = PromptedUnitTests;
 			sourceTree = "<group>";
@@ -440,7 +455,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDCE20A2751C6C8009EFA83 /* PromptsView.swift in Sources */,
+				DF122D97276061B800836971 /* HomeFeedReducer.swift in Sources */,
 				DF0442DE275E9B2A003CE964 /* AppState.swift in Sources */,
+				DF122D942760513E00836971 /* HomeView.swift in Sources */,
 				DFDCE2142751C756009EFA83 /* Spacing.swift in Sources */,
 				DF0442E0275EB1C4003CE964 /* AppAction.swift in Sources */,
 				DF0442F12760433C003CE964 /* PromptsAction.swift in Sources */,
@@ -451,6 +468,7 @@
 				DF993E0E2751C0CD00131CE8 /* PromptedApp.swift in Sources */,
 				DF0442EE276042DD003CE964 /* PromptReducer.swift in Sources */,
 				DFDCE2112751C73B009EFA83 /* Color+Extension.swift in Sources */,
+				DF122D9A276061CB00836971 /* HomeFeedAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +477,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFDCE20B2751C6C8009EFA83 /* PromptsView.swift in Sources */,
+				DF122D98276061B800836971 /* HomeFeedReducer.swift in Sources */,
 				DF0442E4275F1EEC003CE964 /* AppState.swift in Sources */,
+				DF122D952760513E00836971 /* HomeView.swift in Sources */,
 				DFDCE2152751C756009EFA83 /* Spacing.swift in Sources */,
 				DF0442E5275F1EF0003CE964 /* AppAction.swift in Sources */,
 				DF0442F22760433C003CE964 /* PromptsAction.swift in Sources */,
@@ -470,6 +490,7 @@
 				DF993E0F2751C0CD00131CE8 /* PromptedApp.swift in Sources */,
 				DF0442EF2760431B003CE964 /* PromptReducer.swift in Sources */,
 				DFDCE2122751C73B009EFA83 /* Color+Extension.swift in Sources */,
+				DF122D9B276061CB00836971 /* HomeFeedAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +518,7 @@
 			files = (
 				DF0442E827601194003CE964 /* PromptReducerTests.swift in Sources */,
 				DF993E292751C1AF00131CE8 /* PromptedUnitTests.swift in Sources */,
+				DF122D9D276062A700836971 /* HomeFeedReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +668,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -677,6 +700,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

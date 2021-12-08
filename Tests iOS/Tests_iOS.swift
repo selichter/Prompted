@@ -8,12 +8,30 @@
 import XCTest
 
 class Tests_iOS: XCTestCase {
+    let app = XCUIApplication()
 
-    func testPromptIsDisplayed() throws {
-        let app = XCUIApplication()
+    override func setUp() {
         app.launch()
-        
+    }
+
+    func testPromptIsDisplayedOnHomeFeed() throws {
         XCTAssertEqual(app.staticTexts["category"].label, "Self-Discovery")
+        XCTAssertEqual(app.staticTexts["prompt"].label, "What are you looking to gain from building a journaling habit?")
+    }
+    
+    func testTappingRefreshIconChangesPrompt() {
+        let initialPrompt = app.staticTexts["prompt"].label
+        XCTAssertEqual(initialPrompt, "What are you looking to gain from building a journaling habit?")
+        app.images["Refresh"].tap()
+        
+        XCTAssertNotEqual(initialPrompt, app.staticTexts["prompt"].label)
+        
+    }
+    
+    func testNavigateToPromptDetailViewAndVerifyElements() {
+        app.staticTexts["prompt"].tap()
+        
+        app.staticTexts["prompt"].waitForExistence(timeout: 2)
         XCTAssertEqual(app.staticTexts["prompt"].label, "What are you looking to gain from building a journaling habit?")
         
         XCTAssert(app.staticTexts["Num of Times Used"].exists)
