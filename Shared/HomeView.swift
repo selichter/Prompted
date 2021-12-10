@@ -13,42 +13,53 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                HStack {
+                VStack(alignment: .leading) {
                     Text("Prompted")
                         .font(.largeTitle)
                         .bold()
-                    Spacer()
-                }
-                
-                NavigationLink(destination: PromptsView(store: store)) {
-                    VStack (alignment: .leading) {
-                        HStack {
-                            Text(store.value.displayPrompt.category.rawValue)
-                                .accessibilityIdentifier("category")
-                            Spacer()
-                            Image(systemName: "arrow.clockwise")
-                                .onTapGesture {
-                                    store.send(.homeFeed(.refreshPrompt))
-                                }
-                        }
-                        .foregroundColor(.white)
-                        .font(.body)
-                        
-                        Text(store.value.displayPrompt.text)
-                            .foregroundColor(.white)
-                            .bold()
-                            .font(.title)
-                            .textCase(.uppercase)
-                            .lineSpacing(2)
-                            .padding(.bottom)
-                            .accessibilityIdentifier("prompt")
+                    
+                    NavigationLink(destination: PromptsView(store: store)) {
+                        VStack{
+                            HStack {
+                                Text(store.value.displayPrompt.category.rawValue)
+                                    .accessibilityIdentifier("category")
+                                Spacer()
+                                Image(systemName: "arrow.clockwise")
+                                    .onTapGesture {
+                                        store.send(.homeFeed(.refreshPrompt))
+                                    }
+                            }
+                            .font(.body)
+                            
+                            Text(store.value.displayPrompt.text)
+                                .bold()
+                                .multilineTextAlignment(.leading)
+                                .font(.title)
+                                .textCase(.uppercase)
+                                .lineSpacing(2)
+                                .padding(.bottom)
+                                .accessibilityIdentifier("prompt")
                     }
+                    .foregroundColor(.white)
                     .padding(Spacing.defaultViewMargin)
                     .background(
                         RoundedRectangle(cornerRadius: 8).fill(.black)
                     )
+                    }
                 }
-
+                
+                VStack(alignment: .leading) {
+                    Text("Recent Entries")
+                    ForEach(store.value.entries) { entry in
+                        HStack {
+                            Text(entry.text)
+                            Spacer()
+                            Text(entry.date.getFormattedDate(format: "MMM dd, yyyy"))
+                        }
+                        
+                    }
+                    
+                }
             }
             .padding(Spacing.defaultViewMargin/2)
         }

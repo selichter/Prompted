@@ -56,4 +56,5 @@ struct AppState {
                text: "What is causing these feelings?",
                category: Category.managingEmotions)
     ]
+    var entries: [Entry] = []
 }

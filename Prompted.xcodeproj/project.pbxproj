@@ -27,6 +27,18 @@
 		DF122D9A276061CB00836971 /* HomeFeedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D99276061CB00836971 /* HomeFeedAction.swift */; };
 		DF122D9B276061CB00836971 /* HomeFeedAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D99276061CB00836971 /* HomeFeedAction.swift */; };
 		DF122D9D276062A700836971 /* HomeFeedReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D9C276062A600836971 /* HomeFeedReducerTests.swift */; };
+		DF122D9F2762A73000836971 /* BorderedView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D9E2762A73000836971 /* BorderedView+Extension.swift */; };
+		DF122DA02762A73000836971 /* BorderedView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122D9E2762A73000836971 /* BorderedView+Extension.swift */; };
+		DF122DA22762E32600836971 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DA12762E32600836971 /* Entry.swift */; };
+		DF122DA32762E32600836971 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DA12762E32600836971 /* Entry.swift */; };
+		DF122DA52762E3AB00836971 /* EntryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DA42762E3AB00836971 /* EntryAction.swift */; };
+		DF122DA62762E3AB00836971 /* EntryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DA42762E3AB00836971 /* EntryAction.swift */; };
+		DF122DA82762E3F400836971 /* EntryReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DA72762E3F400836971 /* EntryReducer.swift */; };
+		DF122DA92762E3F400836971 /* EntryReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DA72762E3F400836971 /* EntryReducer.swift */; };
+		DF122DAB2762EBCC00836971 /* EntryReducerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DAA2762EBCC00836971 /* EntryReducerTests.swift */; };
+		DF122DAE2762F7BD00836971 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DAD2762F7BD00836971 /* Date+Extension.swift */; };
+		DF122DAF2762F7BD00836971 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DAD2762F7BD00836971 /* Date+Extension.swift */; };
+		DF122DB12762F80900836971 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF122DB02762F80900836971 /* DateExtensionTests.swift */; };
 		DF993DFF2751C0CD00131CE8 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993DFE2751C0CD00131CE8 /* Tests_iOS.swift */; };
 		DF993E012751C0CD00131CE8 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E002751C0CD00131CE8 /* Tests_iOSLaunchTests.swift */; };
 		DF993E0B2751C0CD00131CE8 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF993E0A2751C0CD00131CE8 /* Tests_macOS.swift */; };
@@ -84,6 +96,13 @@
 		DF122D96276061B800836971 /* HomeFeedReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedReducer.swift; sourceTree = "<group>"; };
 		DF122D99276061CB00836971 /* HomeFeedAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedAction.swift; sourceTree = "<group>"; };
 		DF122D9C276062A600836971 /* HomeFeedReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedReducerTests.swift; sourceTree = "<group>"; };
+		DF122D9E2762A73000836971 /* BorderedView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BorderedView+Extension.swift"; sourceTree = "<group>"; };
+		DF122DA12762E32600836971 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		DF122DA42762E3AB00836971 /* EntryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryAction.swift; sourceTree = "<group>"; };
+		DF122DA72762E3F400836971 /* EntryReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryReducer.swift; sourceTree = "<group>"; };
+		DF122DAA2762EBCC00836971 /* EntryReducerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryReducerTests.swift; sourceTree = "<group>"; };
+		DF122DAD2762F7BD00836971 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		DF122DB02762F80900836971 /* DateExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensionTests.swift; sourceTree = "<group>"; };
 		DF993DE62751C0C900131CE8 /* PromptedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptedApp.swift; sourceTree = "<group>"; };
 		DF993DE82751C0CD00131CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF993DED2751C0CD00131CE8 /* Prompted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prompted.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +182,7 @@
 			children = (
 				DF0442F02760433C003CE964 /* PromptsAction.swift */,
 				DF122D99276061CB00836971 /* HomeFeedAction.swift */,
+				DF122DA42762E3AB00836971 /* EntryAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -172,8 +192,17 @@
 			children = (
 				DF0442ED276042DD003CE964 /* PromptReducer.swift */,
 				DF122D96276061B800836971 /* HomeFeedReducer.swift */,
+				DF122DA72762E3F400836971 /* EntryReducer.swift */,
 			);
 			path = Reducers;
+			sourceTree = "<group>";
+		};
+		DF122DAC2762F7AA00836971 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF122DAD2762F7BD00836971 /* Date+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		DF993DE02751C0C900131CE8 = {
@@ -193,6 +222,7 @@
 		DF993DE52751C0C900131CE8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DF122DAC2762F7AA00836971 /* Utils */,
 				DF0442DA275E9AFE003CE964 /* Store */,
 				DFDCE20C2751C6F8009EFA83 /* Styles */,
 				DF993DE62751C0C900131CE8 /* PromptedApp.swift */,
@@ -201,6 +231,7 @@
 				DFDCE2062751C6A5009EFA83 /* Category.swift */,
 				DFDCE2092751C6C8009EFA83 /* PromptsView.swift */,
 				DF122D932760513E00836971 /* HomeView.swift */,
+				DF122DA12762E32600836971 /* Entry.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -249,6 +280,8 @@
 				DF993E282751C1AF00131CE8 /* PromptedUnitTests.swift */,
 				DF0442E727601194003CE964 /* PromptReducerTests.swift */,
 				DF122D9C276062A600836971 /* HomeFeedReducerTests.swift */,
+				DF122DAA2762EBCC00836971 /* EntryReducerTests.swift */,
+				DF122DB02762F80900836971 /* DateExtensionTests.swift */,
 			);
 			path = PromptedUnitTests;
 			sourceTree = "<group>";
@@ -258,6 +291,7 @@
 			children = (
 				DFDCE2102751C73B009EFA83 /* Color+Extension.swift */,
 				DFDCE2132751C756009EFA83 /* Spacing.swift */,
+				DF122D9E2762A73000836971 /* BorderedView+Extension.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -454,12 +488,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF122DA82762E3F400836971 /* EntryReducer.swift in Sources */,
 				DFDCE20A2751C6C8009EFA83 /* PromptsView.swift in Sources */,
+				DF122DA22762E32600836971 /* Entry.swift in Sources */,
 				DF122D97276061B800836971 /* HomeFeedReducer.swift in Sources */,
+				DF122D9F2762A73000836971 /* BorderedView+Extension.swift in Sources */,
+				DF122DAE2762F7BD00836971 /* Date+Extension.swift in Sources */,
 				DF0442DE275E9B2A003CE964 /* AppState.swift in Sources */,
 				DF122D942760513E00836971 /* HomeView.swift in Sources */,
 				DFDCE2142751C756009EFA83 /* Spacing.swift in Sources */,
 				DF0442E0275EB1C4003CE964 /* AppAction.swift in Sources */,
+				DF122DA52762E3AB00836971 /* EntryAction.swift in Sources */,
 				DF0442F12760433C003CE964 /* PromptsAction.swift in Sources */,
 				DF0442DC275E9B0E003CE964 /* Store.swift in Sources */,
 				DF0442E2275EB219003CE964 /* AppReducer.swift in Sources */,
@@ -476,12 +515,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF122DA92762E3F400836971 /* EntryReducer.swift in Sources */,
 				DFDCE20B2751C6C8009EFA83 /* PromptsView.swift in Sources */,
+				DF122DA32762E32600836971 /* Entry.swift in Sources */,
 				DF122D98276061B800836971 /* HomeFeedReducer.swift in Sources */,
+				DF122DA02762A73000836971 /* BorderedView+Extension.swift in Sources */,
+				DF122DAF2762F7BD00836971 /* Date+Extension.swift in Sources */,
 				DF0442E4275F1EEC003CE964 /* AppState.swift in Sources */,
 				DF122D952760513E00836971 /* HomeView.swift in Sources */,
 				DFDCE2152751C756009EFA83 /* Spacing.swift in Sources */,
 				DF0442E5275F1EF0003CE964 /* AppAction.swift in Sources */,
+				DF122DA62762E3AB00836971 /* EntryAction.swift in Sources */,
 				DF0442F22760433C003CE964 /* PromptsAction.swift in Sources */,
 				DF0442E3275F1EE8003CE964 /* Store.swift in Sources */,
 				DF0442E6275F1EF3003CE964 /* AppReducer.swift in Sources */,
@@ -517,7 +561,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF0442E827601194003CE964 /* PromptReducerTests.swift in Sources */,
+				DF122DAB2762EBCC00836971 /* EntryReducerTests.swift in Sources */,
 				DF993E292751C1AF00131CE8 /* PromptedUnitTests.swift in Sources */,
+				DF122DB12762F80900836971 /* DateExtensionTests.swift in Sources */,
 				DF122D9D276062A700836971 /* HomeFeedReducerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

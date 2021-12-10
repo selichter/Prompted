@@ -15,7 +15,7 @@ class HomeFeedReducerTests: XCTestCase {
         let initialPrompt = state.displayPrompt
         
         
-        let effects = homeFeedReducer(value: &state, action: AppAction.homeFeed(.refreshPrompt))
+        homeFeedReducer(value: &state, action: AppAction.homeFeed(.refreshPrompt))
 
         XCTAssertNotEqual(state.displayPrompt.id, initialPrompt.id)
         XCTAssertFalse(state.usedPrompts.contains(where: {$0.id == initialPrompt.id}))
