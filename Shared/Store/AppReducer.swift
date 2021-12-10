@@ -9,7 +9,8 @@ import Foundation
 
 let appReducer = combine(
   promptReducer,
-  homeFeedReducer
+  homeFeedReducer,
+  entryReducer
 )
 
 

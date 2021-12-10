@@ -40,9 +40,23 @@ class Tests_iOS: XCTestCase {
         XCTAssert(app.staticTexts["Last Used"].exists)
         XCTAssertEqual(app.staticTexts["lastUsed"].label, "-")
         
-        app.images["Selected"].tap()
+        XCTAssert(app.staticTexts["Category"].exists)
+        XCTAssertEqual(app.staticTexts["category"].label, "Self-Discovery")
+        
+        let entryText = "Sample Entry Text"
+        let entryTextView = app.textViews["entryTextfield"]
+        entryTextView.doubleTap()
+        entryTextView.typeText(entryText)
+        app.buttons["Save Entry"].tap()
+        
         XCTAssertEqual(app.staticTexts["count"].label, "1")
-        XCTAssertNotEqual(app.staticTexts["lastUsed"].label, "-")
+        let dateformat = DateFormatter()
+        dateformat.dateFormat = "MMM dd, yyyy"
+        let expectedDate = dateformat.string(from: Date())
+        XCTAssertEqual(app.staticTexts["lastUsed"].label, expectedDate)
+        
+        app.navigationBars.buttons["Back"].tap()
+        XCTAssert(app.staticTexts[entryText].exists)
     }
 
 }
